@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--bootsrap css-->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        
+    <!--css eksternal-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>calculator</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="row">
+            <div class="col-md-12">
+                <form action="#" name="calculator" class="content mt-5  py-5">
+                    <h2 class="text">CALCULATOR
+                        <br> ---------------- 
+                    </h2>
+                    <input type="text" class="display form-control border-dark py-3" name="display" 
+                    id="display"><br>    
+
+                    <input type="button" class="btn btn-info" value="AC" id="clear">
+                    <input type="button" class="btn btn-info ml-3" value="C" onclick="backSpace()">
+                    <input type="button" class="btn btn-info ml-3"value="%"
+                    onclick="document.calculator.display.value+='%'">
+                    <input type="button" class="btn btn-info ml-3 m-1" value="/" onclick="document.calculator.display.value+='/'"><br><br>
+                    <input type="button" class="btn btn-info" value="7" onclick="seven()">
+                    <input type="button" class="btn btn-info ml-3" value="8" onclick="eight()">
+                    <input type="button" class="btn btn-info ml-3" value="9" onclick="nine()">
+                    <input type="button" class="btn btn-info ml-3 me-1" value="*" onclick="document.calculator.display.value+='*'"><br><br>
+                    <input type="button" class="btn btn-info" value="6" onclick="six()">
+                    <input type="button" class="btn btn-info ml-3" value="5" onclick="five()">
+                    <input type="button" class="btn btn-info ml-3" value="4" onclick="four()">
+                    <input type="button" class="btn btn-info ml-3 me-1" value="-" onclick="document.calculator.display.value+='-'"><br><br>
+                    <input type="button" class="btn btn-info" value="3" onclick="three()">
+                    <input type="button" class="btn btn-info ml-3" value="2" onclick="two()">
+                    <input type="button" class="btn btn-info ml-3" value="1" onclick="one()">
+                    <input type="button" class="btn btn-info ml-3 me-1" value="+" onclick="document.calculator.display.value+='+'"><br><br>
+                    <input type="button" class="btn btn-info" value="0" onclick="zero()">
+                    <input type="button" class="btn btn-info ml-3" value="00" onclick="document.calculator.display.value+='00'">
+                    <input type="button" class="btn btn-info ml-3" value="." onclick="point()">
+                    <input type="button" class="btn btn-info ml-3 me-1" value="=" onclick="document.calculator.display.value = eval(calculator.display.value)">
+            </div>
+        </div>
+    </div>
+
+
+    <!--js eksternal-->
+    <script src="custom.js"></script>
+
+    <!--js bootstrap -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    height: 640px;
+}
+
+.content {
+    background-color: blueviolet;
+    color: aliceblue;
+    height: auto;
+    width: 270px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+.text {
+    color: yellow;
+}
+
+.btn{
+    height: auto;
+    width: 40px;
+    margin-right: 13px;
+}
